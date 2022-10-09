@@ -1,0 +1,21 @@
+
+7-Zip 19.00 (x64) : Copyright (c) 1999-2018 Igor Pavlov : 2019-02-21
+
+Scanning the drive for archives:
+1 file, 137541 bytes (135 KiB)
+
+Extracting archive: C:\wnmp\www\auto-report\api\controllers\upload\20210112\f85a71489fa67505a36cadb815298c8e.7z
+--
+Path = C:\wnmp\www\auto-report\api\controllers\upload\20210112\f85a71489fa67505a36cadb815298c8e.7z
+Type = 7z
+Physical Size = 137541
+Headers Size = 196
+Method = LZMA2:192k
+Solid = +
+Blocks = 1
+
+Everything is Ok
+
+Files: 2
+Size:       147172
+Compressed: 137541

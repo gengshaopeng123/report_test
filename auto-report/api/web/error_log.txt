@@ -1,0 +1,810 @@
+[26-May-2022 10:01:41 Asia/Chongqing] An Error occurred while handling another error:
+yii\web\HeadersAlreadySentException: Headers already sent in C:\wnmp\www\auto-report\api\controllers\ReportController.php on line 153. in C:\wnmp\www\auto-report\vendor\yiisoft\yii2\web\Response.php:366
+Stack trace:
+#0 C:\wnmp\www\auto-report\vendor\yiisoft\yii2\web\Response.php(339): yii\web\Response->sendHeaders()
+#1 C:\wnmp\www\auto-report\vendor\yiisoft\yii2\web\ErrorHandler.php(135): yii\web\Response->send()
+#2 C:\wnmp\www\auto-report\vendor\yiisoft\yii2\base\ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\HeadersAlreadySentException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\HeadersAlreadySentException))
+#4 {main}
+Previous exception:
+yii\web\HeadersAlreadySentException: Headers already sent in C:\wnmp\www\auto-report\api\controllers\ReportController.php on line 153. in C:\wnmp\www\auto-report\vendor\yiisoft\yii2\web\Response.php:366
+Stack trace:
+#0 C:\wnmp\www\auto-report\vendor\yiisoft\yii2\web\Response.php(339): yii\web\Response->sendHeaders()
+#1 C:\wnmp\www\auto-report\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Response->send()
+#2 C:\wnmp\www\auto-report\api\web\index.php(21): yii\base\Application->run()
+#3 {main}
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData',
+    'APPDATA' => 'C:\\Windows\\system32\\config\\systemprofile\\AppData\\Roaming',
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files',
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files',
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files',
+    'COMPUTERNAME' => 'ONLINE-REPORT',
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe',
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData',
+    'LOCALAPPDATA' => 'C:\\Windows\\system32\\config\\systemprofile\\AppData\\Local',
+    'MYSQL_HOME' => 'C:\\wnmp\\mysql',
+    'NODE_OPTIONS' => '--max-http-header-size=81920',
+    'NUMBER_OF_PROCESSORS' => '8',
+    'OS' => 'Windows_NT',
+    'Path' => 'C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python38-32\\Scripts\\;C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python38-32\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\wnmp\\php\\;C:\\wnmp\\nginx\\;C:\\wnmp\\mysql\\bin\\;C:\\work\\tool\\Git\\cmd;C:\\Program Files\\Git\\cmd;C:\\Windows\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps',
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW',
+    'PROCESSOR_ARCHITECTURE' => 'AMD64',
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 85 Stepping 7, GenuineIntel',
+    'PROCESSOR_LEVEL' => '6',
+    'PROCESSOR_REVISION' => '5507',
+    'ProgramData' => 'C:\\ProgramData',
+    'ProgramFiles' => 'C:\\Program Files',
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)',
+    'ProgramW6432' => 'C:\\Program Files',
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules',
+    'PUBLIC' => 'C:\\Users\\Public',
+    'SystemDrive' => 'C:',
+    'SystemRoot' => 'C:\\Windows',
+    'TEMP' => 'C:\\Windows\\TEMP',
+    'TMP' => 'C:\\Windows\\TEMP',
+    'USERDOMAIN' => 'WORKGROUP',
+    'USERNAME' => 'ONLINE-REPORT$',
+    'USERPROFILE' => 'C:\\Windows\\system32\\config\\systemprofile',
+    'windir' => 'C:\\Windows',
+    'HTTP_REFERER' => 'http://report.analyses.cn/index/Mangent/reportdetail',
+    'HTTP_COOKIE' => 'advanced-api=fj80rmu8ispn1u3ajsn6iaorck',
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+    'HTTP_ACCEPT' => 'application/json, text/plain, */*',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36',
+    'HTTP_CONNECTION' => 'close',
+    'HTTP_HOST' => '127.0.0.1:8090',
+    'REDIRECT_STATUS' => '200',
+    'SERVER_NAME' => '127.0.0.1',
+    'SERVER_PORT' => '8090',
+    'SERVER_ADDR' => '127.0.0.1',
+    'REMOTE_PORT' => '54937',
+    'REMOTE_ADDR' => '127.0.0.1',
+    'SERVER_SOFTWARE' => 'nginx/1.16.1',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'REQUEST_SCHEME' => 'http',
+    'SERVER_PROTOCOL' => 'HTTP/1.0',
+    'DOCUMENT_ROOT' => 'C:/wnmp/www/auto-report/api/web',
+    'DOCUMENT_URI' => '/index.php',
+    'REQUEST_URI' => '/report/reportpdfpath?id=66852',
+    'SCRIPT_NAME' => '/index.php',
+    'CONTENT_LENGTH' => '',
+    'CONTENT_TYPE' => '',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => 'id=66852',
+    'SCRIPT_FILENAME' => 'C:/wnmp/www/auto-report/api/web/index.php',
+    'FCGI_ROLE' => 'RESPONDER',
+    'PHP_SELF' => '/index.php',
+    'REQUEST_TIME_FLOAT' => 1653530501.435937,
+    'REQUEST_TIME' => 1653530501,
+]
+[29-May-2022 16:33:17 Asia/Chongqing] An Error occurred while handling another error:
+yii\web\HeadersAlreadySentException: Headers already sent in C:\wnmp\www\auto-report\api\controllers\ReportController.php on line 153. in C:\wnmp\www\auto-report\vendor\yiisoft\yii2\web\Response.php:366
+Stack trace:
+#0 C:\wnmp\www\auto-report\vendor\yiisoft\yii2\web\Response.php(339): yii\web\Response->sendHeaders()
+#1 C:\wnmp\www\auto-report\vendor\yiisoft\yii2\web\ErrorHandler.php(135): yii\web\Response->send()
+#2 C:\wnmp\www\auto-report\vendor\yiisoft\yii2\base\ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\HeadersAlreadySentException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\HeadersAlreadySentException))
+#4 {main}
+Previous exception:
+yii\web\HeadersAlreadySentException: Headers already sent in C:\wnmp\www\auto-report\api\controllers\ReportController.php on line 153. in C:\wnmp\www\auto-report\vendor\yiisoft\yii2\web\Response.php:366
+Stack trace:
+#0 C:\wnmp\www\auto-report\vendor\yiisoft\yii2\web\Response.php(339): yii\web\Response->sendHeaders()
+#1 C:\wnmp\www\auto-report\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Response->send()
+#2 C:\wnmp\www\auto-report\api\web\index.php(21): yii\base\Application->run()
+#3 {main}
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData',
+    'APPDATA' => 'C:\\Windows\\system32\\config\\systemprofile\\AppData\\Roaming',
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files',
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files',
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files',
+    'COMPUTERNAME' => 'ONLINE-REPORT',
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe',
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData',
+    'LOCALAPPDATA' => 'C:\\Windows\\system32\\config\\systemprofile\\AppData\\Local',
+    'MYSQL_HOME' => 'C:\\wnmp\\mysql',
+    'NODE_OPTIONS' => '--max-http-header-size=81920',
+    'NUMBER_OF_PROCESSORS' => '8',
+    'OS' => 'Windows_NT',
+    'Path' => 'C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python38-32\\Scripts\\;C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python38-32\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\wnmp\\php\\;C:\\wnmp\\nginx\\;C:\\wnmp\\mysql\\bin\\;C:\\work\\tool\\Git\\cmd;C:\\Program Files\\Git\\cmd;C:\\Windows\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps',
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW',
+    'PROCESSOR_ARCHITECTURE' => 'AMD64',
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 85 Stepping 7, GenuineIntel',
+    'PROCESSOR_LEVEL' => '6',
+    'PROCESSOR_REVISION' => '5507',
+    'ProgramData' => 'C:\\ProgramData',
+    'ProgramFiles' => 'C:\\Program Files',
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)',
+    'ProgramW6432' => 'C:\\Program Files',
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules',
+    'PUBLIC' => 'C:\\Users\\Public',
+    'SystemDrive' => 'C:',
+    'SystemRoot' => 'C:\\Windows',
+    'TEMP' => 'C:\\Windows\\TEMP',
+    'TMP' => 'C:\\Windows\\TEMP',
+    'USERDOMAIN' => 'WORKGROUP',
+    'USERNAME' => 'ONLINE-REPORT$',
+    'USERPROFILE' => 'C:\\Windows\\system32\\config\\systemprofile',
+    'windir' => 'C:\\Windows',
+    'HTTP_COOKIE' => 'advanced-api=krk593agi6d3pnmp7mrrqj33b7',
+    'HTTP_REFERER' => 'http://report.analyses.cn/index/Mangent/reportdetail',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+    'HTTP_ACCEPT' => 'application/json, text/plain, */*',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:100.0) Gecko/20100101 Firefox/100.0',
+    'HTTP_CONNECTION' => 'close',
+    'HTTP_HOST' => '127.0.0.1:8090',
+    'REDIRECT_STATUS' => '200',
+    'SERVER_NAME' => '127.0.0.1',
+    'SERVER_PORT' => '8090',
+    'SERVER_ADDR' => '127.0.0.1',
+    'REMOTE_PORT' => '60072',
+    'REMOTE_ADDR' => '127.0.0.1',
+    'SERVER_SOFTWARE' => 'nginx/1.16.1',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'REQUEST_SCHEME' => 'http',
+    'SERVER_PROTOCOL' => 'HTTP/1.0',
+    'DOCUMENT_ROOT' => 'C:/wnmp/www/auto-report/api/web',
+    'DOCUMENT_URI' => '/index.php',
+    'REQUEST_URI' => '/report/reportpdfpath?id=75481',
+    'SCRIPT_NAME' => '/index.php',
+    'CONTENT_LENGTH' => '',
+    'CONTENT_TYPE' => '',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => 'id=75481',
+    'SCRIPT_FILENAME' => 'C:/wnmp/www/auto-report/api/web/index.php',
+    'FCGI_ROLE' => 'RESPONDER',
+    'PHP_SELF' => '/index.php',
+    'REQUEST_TIME_FLOAT' => 1653813197.664462,
+    'REQUEST_TIME' => 1653813197,
+]
+[29-May-2022 16:38:34 Asia/Chongqing] An Error occurred while handling another error:
+yii\web\HeadersAlreadySentException: Headers already sent in C:\wnmp\www\auto-report\api\controllers\ReportController.php on line 153. in C:\wnmp\www\auto-report\vendor\yiisoft\yii2\web\Response.php:366
+Stack trace:
+#0 C:\wnmp\www\auto-report\vendor\yiisoft\yii2\web\Response.php(339): yii\web\Response->sendHeaders()
+#1 C:\wnmp\www\auto-report\vendor\yiisoft\yii2\web\ErrorHandler.php(135): yii\web\Response->send()
+#2 C:\wnmp\www\auto-report\vendor\yiisoft\yii2\base\ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\HeadersAlreadySentException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\HeadersAlreadySentException))
+#4 {main}
+Previous exception:
+yii\web\HeadersAlreadySentException: Headers already sent in C:\wnmp\www\auto-report\api\controllers\ReportController.php on line 153. in C:\wnmp\www\auto-report\vendor\yiisoft\yii2\web\Response.php:366
+Stack trace:
+#0 C:\wnmp\www\auto-report\vendor\yiisoft\yii2\web\Response.php(339): yii\web\Response->sendHeaders()
+#1 C:\wnmp\www\auto-report\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Response->send()
+#2 C:\wnmp\www\auto-report\api\web\index.php(21): yii\base\Application->run()
+#3 {main}
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData',
+    'APPDATA' => 'C:\\Windows\\system32\\config\\systemprofile\\AppData\\Roaming',
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files',
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files',
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files',
+    'COMPUTERNAME' => 'ONLINE-REPORT',
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe',
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData',
+    'LOCALAPPDATA' => 'C:\\Windows\\system32\\config\\systemprofile\\AppData\\Local',
+    'MYSQL_HOME' => 'C:\\wnmp\\mysql',
+    'NODE_OPTIONS' => '--max-http-header-size=81920',
+    'NUMBER_OF_PROCESSORS' => '8',
+    'OS' => 'Windows_NT',
+    'Path' => 'C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python38-32\\Scripts\\;C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python38-32\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\wnmp\\php\\;C:\\wnmp\\nginx\\;C:\\wnmp\\mysql\\bin\\;C:\\work\\tool\\Git\\cmd;C:\\Program Files\\Git\\cmd;C:\\Windows\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps',
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW',
+    'PROCESSOR_ARCHITECTURE' => 'AMD64',
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 85 Stepping 7, GenuineIntel',
+    'PROCESSOR_LEVEL' => '6',
+    'PROCESSOR_REVISION' => '5507',
+    'ProgramData' => 'C:\\ProgramData',
+    'ProgramFiles' => 'C:\\Program Files',
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)',
+    'ProgramW6432' => 'C:\\Program Files',
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules',
+    'PUBLIC' => 'C:\\Users\\Public',
+    'SystemDrive' => 'C:',
+    'SystemRoot' => 'C:\\Windows',
+    'TEMP' => 'C:\\Windows\\TEMP',
+    'TMP' => 'C:\\Windows\\TEMP',
+    'USERDOMAIN' => 'WORKGROUP',
+    'USERNAME' => 'ONLINE-REPORT$',
+    'USERPROFILE' => 'C:\\Windows\\system32\\config\\systemprofile',
+    'windir' => 'C:\\Windows',
+    'HTTP_COOKIE' => 'advanced-api=krk593agi6d3pnmp7mrrqj33b7',
+    'HTTP_REFERER' => 'http://report.analyses.cn/index/Mangent/reportdetail',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+    'HTTP_ACCEPT' => 'application/json, text/plain, */*',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:100.0) Gecko/20100101 Firefox/100.0',
+    'HTTP_CONNECTION' => 'close',
+    'HTTP_HOST' => '127.0.0.1:8090',
+    'REDIRECT_STATUS' => '200',
+    'SERVER_NAME' => '127.0.0.1',
+    'SERVER_PORT' => '8090',
+    'SERVER_ADDR' => '127.0.0.1',
+    'REMOTE_PORT' => '60508',
+    'REMOTE_ADDR' => '127.0.0.1',
+    'SERVER_SOFTWARE' => 'nginx/1.16.1',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'REQUEST_SCHEME' => 'http',
+    'SERVER_PROTOCOL' => 'HTTP/1.0',
+    'DOCUMENT_ROOT' => 'C:/wnmp/www/auto-report/api/web',
+    'DOCUMENT_URI' => '/index.php',
+    'REQUEST_URI' => '/report/reportpdfpath?id=75481',
+    'SCRIPT_NAME' => '/index.php',
+    'CONTENT_LENGTH' => '',
+    'CONTENT_TYPE' => '',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => 'id=75481',
+    'SCRIPT_FILENAME' => 'C:/wnmp/www/auto-report/api/web/index.php',
+    'FCGI_ROLE' => 'RESPONDER',
+    'PHP_SELF' => '/index.php',
+    'REQUEST_TIME_FLOAT' => 1653813514.493238,
+    'REQUEST_TIME' => 1653813514,
+]
+[02-Jun-2022 01:29:41 Asia/Chongqing] An Error occurred while handling another error:
+yii\web\HeadersAlreadySentException: Headers already sent in C:\wnmp\www\auto-report\api\controllers\ReportController.php on line 153. in C:\wnmp\www\auto-report\vendor\yiisoft\yii2\web\Response.php:366
+Stack trace:
+#0 C:\wnmp\www\auto-report\vendor\yiisoft\yii2\web\Response.php(339): yii\web\Response->sendHeaders()
+#1 C:\wnmp\www\auto-report\vendor\yiisoft\yii2\web\ErrorHandler.php(135): yii\web\Response->send()
+#2 C:\wnmp\www\auto-report\vendor\yiisoft\yii2\base\ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\HeadersAlreadySentException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\HeadersAlreadySentException))
+#4 {main}
+Previous exception:
+yii\web\HeadersAlreadySentException: Headers already sent in C:\wnmp\www\auto-report\api\controllers\ReportController.php on line 153. in C:\wnmp\www\auto-report\vendor\yiisoft\yii2\web\Response.php:366
+Stack trace:
+#0 C:\wnmp\www\auto-report\vendor\yiisoft\yii2\web\Response.php(339): yii\web\Response->sendHeaders()
+#1 C:\wnmp\www\auto-report\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Response->send()
+#2 C:\wnmp\www\auto-report\api\web\index.php(21): yii\base\Application->run()
+#3 {main}
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData',
+    'APPDATA' => 'C:\\Windows\\system32\\config\\systemprofile\\AppData\\Roaming',
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files',
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files',
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files',
+    'COMPUTERNAME' => 'ONLINE-REPORT',
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe',
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData',
+    'LOCALAPPDATA' => 'C:\\Windows\\system32\\config\\systemprofile\\AppData\\Local',
+    'MYSQL_HOME' => 'C:\\wnmp\\mysql',
+    'NODE_OPTIONS' => '--max-http-header-size=81920',
+    'NUMBER_OF_PROCESSORS' => '8',
+    'OS' => 'Windows_NT',
+    'Path' => 'C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python38-32\\Scripts\\;C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python38-32\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\wnmp\\php\\;C:\\wnmp\\nginx\\;C:\\wnmp\\mysql\\bin\\;C:\\work\\tool\\Git\\cmd;C:\\Program Files\\Git\\cmd;C:\\Windows\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps',
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW',
+    'PROCESSOR_ARCHITECTURE' => 'AMD64',
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 85 Stepping 7, GenuineIntel',
+    'PROCESSOR_LEVEL' => '6',
+    'PROCESSOR_REVISION' => '5507',
+    'ProgramData' => 'C:\\ProgramData',
+    'ProgramFiles' => 'C:\\Program Files',
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)',
+    'ProgramW6432' => 'C:\\Program Files',
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules',
+    'PUBLIC' => 'C:\\Users\\Public',
+    'SystemDrive' => 'C:',
+    'SystemRoot' => 'C:\\Windows',
+    'TEMP' => 'C:\\Windows\\TEMP',
+    'TMP' => 'C:\\Windows\\TEMP',
+    'USERDOMAIN' => 'WORKGROUP',
+    'USERNAME' => 'ONLINE-REPORT$',
+    'USERPROFILE' => 'C:\\Windows\\system32\\config\\systemprofile',
+    'windir' => 'C:\\Windows',
+    'HTTP_COOKIE' => 'advanced-api=16ssrnq7fm2fmnfkq1dt1c6b47',
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+    'HTTP_REFERER' => 'http://report.genolyses.cn/index/Mangent/reportdetail',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36',
+    'HTTP_ACCEPT' => 'application/json, text/plain, */*',
+    'HTTP_CONNECTION' => 'close',
+    'HTTP_HOST' => '127.0.0.1:8090',
+    'REDIRECT_STATUS' => '200',
+    'SERVER_NAME' => '127.0.0.1',
+    'SERVER_PORT' => '8090',
+    'SERVER_ADDR' => '127.0.0.1',
+    'REMOTE_PORT' => '53160',
+    'REMOTE_ADDR' => '127.0.0.1',
+    'SERVER_SOFTWARE' => 'nginx/1.16.1',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'REQUEST_SCHEME' => 'http',
+    'SERVER_PROTOCOL' => 'HTTP/1.0',
+    'DOCUMENT_ROOT' => 'C:/wnmp/www/auto-report/api/web',
+    'DOCUMENT_URI' => '/index.php',
+    'REQUEST_URI' => '/report/reportpdfpath?id=1495',
+    'SCRIPT_NAME' => '/index.php',
+    'CONTENT_LENGTH' => '',
+    'CONTENT_TYPE' => '',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => 'id=1495',
+    'SCRIPT_FILENAME' => 'C:/wnmp/www/auto-report/api/web/index.php',
+    'FCGI_ROLE' => 'RESPONDER',
+    'PHP_SELF' => '/index.php',
+    'REQUEST_TIME_FLOAT' => 1654104581.21831,
+    'REQUEST_TIME' => 1654104581,
+]
+[02-Jun-2022 01:30:33 Asia/Chongqing] An Error occurred while handling another error:
+yii\web\HeadersAlreadySentException: Headers already sent in C:\wnmp\www\auto-report\api\controllers\ReportController.php on line 153. in C:\wnmp\www\auto-report\vendor\yiisoft\yii2\web\Response.php:366
+Stack trace:
+#0 C:\wnmp\www\auto-report\vendor\yiisoft\yii2\web\Response.php(339): yii\web\Response->sendHeaders()
+#1 C:\wnmp\www\auto-report\vendor\yiisoft\yii2\web\ErrorHandler.php(135): yii\web\Response->send()
+#2 C:\wnmp\www\auto-report\vendor\yiisoft\yii2\base\ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\HeadersAlreadySentException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\HeadersAlreadySentException))
+#4 {main}
+Previous exception:
+yii\web\HeadersAlreadySentException: Headers already sent in C:\wnmp\www\auto-report\api\controllers\ReportController.php on line 153. in C:\wnmp\www\auto-report\vendor\yiisoft\yii2\web\Response.php:366
+Stack trace:
+#0 C:\wnmp\www\auto-report\vendor\yiisoft\yii2\web\Response.php(339): yii\web\Response->sendHeaders()
+#1 C:\wnmp\www\auto-report\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Response->send()
+#2 C:\wnmp\www\auto-report\api\web\index.php(21): yii\base\Application->run()
+#3 {main}
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData',
+    'APPDATA' => 'C:\\Windows\\system32\\config\\systemprofile\\AppData\\Roaming',
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files',
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files',
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files',
+    'COMPUTERNAME' => 'ONLINE-REPORT',
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe',
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData',
+    'LOCALAPPDATA' => 'C:\\Windows\\system32\\config\\systemprofile\\AppData\\Local',
+    'MYSQL_HOME' => 'C:\\wnmp\\mysql',
+    'NODE_OPTIONS' => '--max-http-header-size=81920',
+    'NUMBER_OF_PROCESSORS' => '8',
+    'OS' => 'Windows_NT',
+    'Path' => 'C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python38-32\\Scripts\\;C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python38-32\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\wnmp\\php\\;C:\\wnmp\\nginx\\;C:\\wnmp\\mysql\\bin\\;C:\\work\\tool\\Git\\cmd;C:\\Program Files\\Git\\cmd;C:\\Windows\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps',
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW',
+    'PROCESSOR_ARCHITECTURE' => 'AMD64',
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 85 Stepping 7, GenuineIntel',
+    'PROCESSOR_LEVEL' => '6',
+    'PROCESSOR_REVISION' => '5507',
+    'ProgramData' => 'C:\\ProgramData',
+    'ProgramFiles' => 'C:\\Program Files',
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)',
+    'ProgramW6432' => 'C:\\Program Files',
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules',
+    'PUBLIC' => 'C:\\Users\\Public',
+    'SystemDrive' => 'C:',
+    'SystemRoot' => 'C:\\Windows',
+    'TEMP' => 'C:\\Windows\\TEMP',
+    'TMP' => 'C:\\Windows\\TEMP',
+    'USERDOMAIN' => 'WORKGROUP',
+    'USERNAME' => 'ONLINE-REPORT$',
+    'USERPROFILE' => 'C:\\Windows\\system32\\config\\systemprofile',
+    'windir' => 'C:\\Windows',
+    'HTTP_COOKIE' => 'advanced-api=16ssrnq7fm2fmnfkq1dt1c6b47',
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+    'HTTP_REFERER' => 'http://report.genolyses.cn/index/Mangent/reportdetail',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36',
+    'HTTP_ACCEPT' => 'application/json, text/plain, */*',
+    'HTTP_CONNECTION' => 'close',
+    'HTTP_HOST' => '127.0.0.1:8090',
+    'REDIRECT_STATUS' => '200',
+    'SERVER_NAME' => '127.0.0.1',
+    'SERVER_PORT' => '8090',
+    'SERVER_ADDR' => '127.0.0.1',
+    'REMOTE_PORT' => '53171',
+    'REMOTE_ADDR' => '127.0.0.1',
+    'SERVER_SOFTWARE' => 'nginx/1.16.1',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'REQUEST_SCHEME' => 'http',
+    'SERVER_PROTOCOL' => 'HTTP/1.0',
+    'DOCUMENT_ROOT' => 'C:/wnmp/www/auto-report/api/web',
+    'DOCUMENT_URI' => '/index.php',
+    'REQUEST_URI' => '/report/reportpdfpath?id=31039',
+    'SCRIPT_NAME' => '/index.php',
+    'CONTENT_LENGTH' => '',
+    'CONTENT_TYPE' => '',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => 'id=31039',
+    'SCRIPT_FILENAME' => 'C:/wnmp/www/auto-report/api/web/index.php',
+    'FCGI_ROLE' => 'RESPONDER',
+    'PHP_SELF' => '/index.php',
+    'REQUEST_TIME_FLOAT' => 1654104633.289311,
+    'REQUEST_TIME' => 1654104633,
+]
+[02-Jun-2022 01:33:00 Asia/Chongqing] An Error occurred while handling another error:
+yii\web\HeadersAlreadySentException: Headers already sent in C:\wnmp\www\auto-report\api\controllers\ReportController.php on line 153. in C:\wnmp\www\auto-report\vendor\yiisoft\yii2\web\Response.php:366
+Stack trace:
+#0 C:\wnmp\www\auto-report\vendor\yiisoft\yii2\web\Response.php(339): yii\web\Response->sendHeaders()
+#1 C:\wnmp\www\auto-report\vendor\yiisoft\yii2\web\ErrorHandler.php(135): yii\web\Response->send()
+#2 C:\wnmp\www\auto-report\vendor\yiisoft\yii2\base\ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\HeadersAlreadySentException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\HeadersAlreadySentException))
+#4 {main}
+Previous exception:
+yii\web\HeadersAlreadySentException: Headers already sent in C:\wnmp\www\auto-report\api\controllers\ReportController.php on line 153. in C:\wnmp\www\auto-report\vendor\yiisoft\yii2\web\Response.php:366
+Stack trace:
+#0 C:\wnmp\www\auto-report\vendor\yiisoft\yii2\web\Response.php(339): yii\web\Response->sendHeaders()
+#1 C:\wnmp\www\auto-report\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Response->send()
+#2 C:\wnmp\www\auto-report\api\web\index.php(21): yii\base\Application->run()
+#3 {main}
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData',
+    'APPDATA' => 'C:\\Windows\\system32\\config\\systemprofile\\AppData\\Roaming',
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files',
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files',
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files',
+    'COMPUTERNAME' => 'ONLINE-REPORT',
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe',
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData',
+    'LOCALAPPDATA' => 'C:\\Windows\\system32\\config\\systemprofile\\AppData\\Local',
+    'MYSQL_HOME' => 'C:\\wnmp\\mysql',
+    'NODE_OPTIONS' => '--max-http-header-size=81920',
+    'NUMBER_OF_PROCESSORS' => '8',
+    'OS' => 'Windows_NT',
+    'Path' => 'C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python38-32\\Scripts\\;C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python38-32\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\wnmp\\php\\;C:\\wnmp\\nginx\\;C:\\wnmp\\mysql\\bin\\;C:\\work\\tool\\Git\\cmd;C:\\Program Files\\Git\\cmd;C:\\Windows\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps',
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW',
+    'PROCESSOR_ARCHITECTURE' => 'AMD64',
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 85 Stepping 7, GenuineIntel',
+    'PROCESSOR_LEVEL' => '6',
+    'PROCESSOR_REVISION' => '5507',
+    'ProgramData' => 'C:\\ProgramData',
+    'ProgramFiles' => 'C:\\Program Files',
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)',
+    'ProgramW6432' => 'C:\\Program Files',
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules',
+    'PUBLIC' => 'C:\\Users\\Public',
+    'SystemDrive' => 'C:',
+    'SystemRoot' => 'C:\\Windows',
+    'TEMP' => 'C:\\Windows\\TEMP',
+    'TMP' => 'C:\\Windows\\TEMP',
+    'USERDOMAIN' => 'WORKGROUP',
+    'USERNAME' => 'ONLINE-REPORT$',
+    'USERPROFILE' => 'C:\\Windows\\system32\\config\\systemprofile',
+    'windir' => 'C:\\Windows',
+    'HTTP_COOKIE' => 'advanced-api=16ssrnq7fm2fmnfkq1dt1c6b47',
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+    'HTTP_REFERER' => 'http://report.genolyses.cn/index/Mangent/reportdetail',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36',
+    'HTTP_ACCEPT' => 'application/json, text/plain, */*',
+    'HTTP_CONNECTION' => 'close',
+    'HTTP_HOST' => '127.0.0.1:8090',
+    'REDIRECT_STATUS' => '200',
+    'SERVER_NAME' => '127.0.0.1',
+    'SERVER_PORT' => '8090',
+    'SERVER_ADDR' => '127.0.0.1',
+    'REMOTE_PORT' => '53199',
+    'REMOTE_ADDR' => '127.0.0.1',
+    'SERVER_SOFTWARE' => 'nginx/1.16.1',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'REQUEST_SCHEME' => 'http',
+    'SERVER_PROTOCOL' => 'HTTP/1.0',
+    'DOCUMENT_ROOT' => 'C:/wnmp/www/auto-report/api/web',
+    'DOCUMENT_URI' => '/index.php',
+    'REQUEST_URI' => '/report/reportpdfpath?id=31039',
+    'SCRIPT_NAME' => '/index.php',
+    'CONTENT_LENGTH' => '',
+    'CONTENT_TYPE' => '',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => 'id=31039',
+    'SCRIPT_FILENAME' => 'C:/wnmp/www/auto-report/api/web/index.php',
+    'FCGI_ROLE' => 'RESPONDER',
+    'PHP_SELF' => '/index.php',
+    'REQUEST_TIME_FLOAT' => 1654104780.935041,
+    'REQUEST_TIME' => 1654104780,
+]
+[06-Jun-2022 15:06:21 Asia/Chongqing] An Error occurred while handling another error:
+yii\web\HeadersAlreadySentException: Headers already sent in C:\wnmp\www\auto-report\api\controllers\ReportController.php on line 153. in C:\wnmp\www\auto-report\vendor\yiisoft\yii2\web\Response.php:366
+Stack trace:
+#0 C:\wnmp\www\auto-report\vendor\yiisoft\yii2\web\Response.php(339): yii\web\Response->sendHeaders()
+#1 C:\wnmp\www\auto-report\vendor\yiisoft\yii2\web\ErrorHandler.php(135): yii\web\Response->send()
+#2 C:\wnmp\www\auto-report\vendor\yiisoft\yii2\base\ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\HeadersAlreadySentException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\HeadersAlreadySentException))
+#4 {main}
+Previous exception:
+yii\web\HeadersAlreadySentException: Headers already sent in C:\wnmp\www\auto-report\api\controllers\ReportController.php on line 153. in C:\wnmp\www\auto-report\vendor\yiisoft\yii2\web\Response.php:366
+Stack trace:
+#0 C:\wnmp\www\auto-report\vendor\yiisoft\yii2\web\Response.php(339): yii\web\Response->sendHeaders()
+#1 C:\wnmp\www\auto-report\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Response->send()
+#2 C:\wnmp\www\auto-report\api\web\index.php(21): yii\base\Application->run()
+#3 {main}
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData',
+    'APPDATA' => 'C:\\Windows\\system32\\config\\systemprofile\\AppData\\Roaming',
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files',
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files',
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files',
+    'COMPUTERNAME' => 'ONLINE-REPORT',
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe',
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData',
+    'LOCALAPPDATA' => 'C:\\Windows\\system32\\config\\systemprofile\\AppData\\Local',
+    'MYSQL_HOME' => 'C:\\wnmp\\mysql',
+    'NODE_OPTIONS' => '--max-http-header-size=81920',
+    'NUMBER_OF_PROCESSORS' => '8',
+    'OS' => 'Windows_NT',
+    'Path' => 'C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python38-32\\Scripts\\;C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python38-32\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\wnmp\\php\\;C:\\wnmp\\nginx\\;C:\\wnmp\\mysql\\bin\\;C:\\work\\tool\\Git\\cmd;C:\\Program Files\\Git\\cmd;C:\\Windows\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps',
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW',
+    'PROCESSOR_ARCHITECTURE' => 'AMD64',
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 85 Stepping 7, GenuineIntel',
+    'PROCESSOR_LEVEL' => '6',
+    'PROCESSOR_REVISION' => '5507',
+    'ProgramData' => 'C:\\ProgramData',
+    'ProgramFiles' => 'C:\\Program Files',
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)',
+    'ProgramW6432' => 'C:\\Program Files',
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules',
+    'PUBLIC' => 'C:\\Users\\Public',
+    'SystemDrive' => 'C:',
+    'SystemRoot' => 'C:\\Windows',
+    'TEMP' => 'C:\\Windows\\TEMP',
+    'TMP' => 'C:\\Windows\\TEMP',
+    'USERDOMAIN' => 'WORKGROUP',
+    'USERNAME' => 'ONLINE-REPORT$',
+    'USERPROFILE' => 'C:\\Windows\\system32\\config\\systemprofile',
+    'windir' => 'C:\\Windows',
+    'HTTP_COOKIE' => 'advanced-api=qul8hf1ubp6qhj7ni4ade72be8',
+    'HTTP_REFERER' => 'http://report.genolyses.cn/index/Mangent/reportdetail',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+    'HTTP_ACCEPT' => 'application/json, text/plain, */*',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:100.0) Gecko/20100101 Firefox/100.0',
+    'HTTP_CONNECTION' => 'close',
+    'HTTP_HOST' => '127.0.0.1:8090',
+    'REDIRECT_STATUS' => '200',
+    'SERVER_NAME' => '127.0.0.1',
+    'SERVER_PORT' => '8090',
+    'SERVER_ADDR' => '127.0.0.1',
+    'REMOTE_PORT' => '50332',
+    'REMOTE_ADDR' => '127.0.0.1',
+    'SERVER_SOFTWARE' => 'nginx/1.16.1',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'REQUEST_SCHEME' => 'http',
+    'SERVER_PROTOCOL' => 'HTTP/1.0',
+    'DOCUMENT_ROOT' => 'C:/wnmp/www/auto-report/api/web',
+    'DOCUMENT_URI' => '/index.php',
+    'REQUEST_URI' => '/report/reportpdfpath?id=31039',
+    'SCRIPT_NAME' => '/index.php',
+    'CONTENT_LENGTH' => '',
+    'CONTENT_TYPE' => '',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => 'id=31039',
+    'SCRIPT_FILENAME' => 'C:/wnmp/www/auto-report/api/web/index.php',
+    'FCGI_ROLE' => 'RESPONDER',
+    'PHP_SELF' => '/index.php',
+    'REQUEST_TIME_FLOAT' => 1654499180.979553,
+    'REQUEST_TIME' => 1654499180,
+]
+[15-Aug-2022 13:34:20 Asia/Chongqing] An Error occurred while handling another error:
+yii\web\HeadersAlreadySentException: Headers already sent in C:\wnmp\www\auto-report\api\controllers\ReportController.php on line 153. in C:\wnmp\www\auto-report\vendor\yiisoft\yii2\web\Response.php:366
+Stack trace:
+#0 C:\wnmp\www\auto-report\vendor\yiisoft\yii2\web\Response.php(339): yii\web\Response->sendHeaders()
+#1 C:\wnmp\www\auto-report\vendor\yiisoft\yii2\web\ErrorHandler.php(135): yii\web\Response->send()
+#2 C:\wnmp\www\auto-report\vendor\yiisoft\yii2\base\ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\HeadersAlreadySentException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\HeadersAlreadySentException))
+#4 {main}
+Previous exception:
+yii\web\HeadersAlreadySentException: Headers already sent in C:\wnmp\www\auto-report\api\controllers\ReportController.php on line 153. in C:\wnmp\www\auto-report\vendor\yiisoft\yii2\web\Response.php:366
+Stack trace:
+#0 C:\wnmp\www\auto-report\vendor\yiisoft\yii2\web\Response.php(339): yii\web\Response->sendHeaders()
+#1 C:\wnmp\www\auto-report\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Response->send()
+#2 C:\wnmp\www\auto-report\api\web\index.php(21): yii\base\Application->run()
+#3 {main}
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData',
+    'APPDATA' => 'C:\\Windows\\system32\\config\\systemprofile\\AppData\\Roaming',
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files',
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files',
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files',
+    'COMPUTERNAME' => 'ONLINE-REPORT',
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe',
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData',
+    'LOCALAPPDATA' => 'C:\\Windows\\system32\\config\\systemprofile\\AppData\\Local',
+    'MYSQL_HOME' => 'C:\\wnmp\\mysql',
+    'NODE_OPTIONS' => '--max-http-header-size=81920',
+    'NUMBER_OF_PROCESSORS' => '8',
+    'OS' => 'Windows_NT',
+    'Path' => 'C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python38-32\\Scripts\\;C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python38-32\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\wnmp\\php\\;C:\\wnmp\\nginx\\;C:\\wnmp\\mysql\\bin\\;C:\\work\\tool\\Git\\cmd;C:\\Program Files\\Git\\cmd;C:\\Windows\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps',
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW',
+    'PROCESSOR_ARCHITECTURE' => 'AMD64',
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 85 Stepping 7, GenuineIntel',
+    'PROCESSOR_LEVEL' => '6',
+    'PROCESSOR_REVISION' => '5507',
+    'ProgramData' => 'C:\\ProgramData',
+    'ProgramFiles' => 'C:\\Program Files',
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)',
+    'ProgramW6432' => 'C:\\Program Files',
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules',
+    'PUBLIC' => 'C:\\Users\\Public',
+    'SystemDrive' => 'C:',
+    'SystemRoot' => 'C:\\Windows',
+    'TEMP' => 'C:\\Windows\\TEMP',
+    'TMP' => 'C:\\Windows\\TEMP',
+    'USERDOMAIN' => 'WORKGROUP',
+    'USERNAME' => 'ONLINE-REPORT$',
+    'USERPROFILE' => 'C:\\Windows\\system32\\config\\systemprofile',
+    'windir' => 'C:\\Windows',
+    'HTTP_COOKIE' => 'advanced-api=cdmuvhhcvhgi5c6n7km2k3cgd7',
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+    'HTTP_REFERER' => 'http://121.36.2.49/index/Mangent/reportdetail',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.79 Safari/537.36',
+    'HTTP_ACCEPT' => 'application/json, text/plain, */*',
+    'HTTP_CONNECTION' => 'close',
+    'HTTP_HOST' => '127.0.0.1:8090',
+    'REDIRECT_STATUS' => '200',
+    'SERVER_NAME' => '127.0.0.1',
+    'SERVER_PORT' => '8090',
+    'SERVER_ADDR' => '127.0.0.1',
+    'REMOTE_PORT' => '59301',
+    'REMOTE_ADDR' => '127.0.0.1',
+    'SERVER_SOFTWARE' => 'nginx/1.16.1',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'REQUEST_SCHEME' => 'http',
+    'SERVER_PROTOCOL' => 'HTTP/1.0',
+    'DOCUMENT_ROOT' => 'C:/wnmp/www/auto-report/api/web',
+    'DOCUMENT_URI' => '/index.php',
+    'REQUEST_URI' => '/report/reportpdfpath?id=107230',
+    'SCRIPT_NAME' => '/index.php',
+    'CONTENT_LENGTH' => '',
+    'CONTENT_TYPE' => '',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => 'id=107230',
+    'SCRIPT_FILENAME' => 'C:/wnmp/www/auto-report/api/web/index.php',
+    'FCGI_ROLE' => 'RESPONDER',
+    'PHP_SELF' => '/index.php',
+    'REQUEST_TIME_FLOAT' => 1660541660.690744,
+    'REQUEST_TIME' => 1660541660,
+]
+[15-Aug-2022 13:40:13 Asia/Chongqing] An Error occurred while handling another error:
+yii\web\HeadersAlreadySentException: Headers already sent in C:\wnmp\www\auto-report\api\controllers\ReportController.php on line 153. in C:\wnmp\www\auto-report\vendor\yiisoft\yii2\web\Response.php:366
+Stack trace:
+#0 C:\wnmp\www\auto-report\vendor\yiisoft\yii2\web\Response.php(339): yii\web\Response->sendHeaders()
+#1 C:\wnmp\www\auto-report\vendor\yiisoft\yii2\web\ErrorHandler.php(135): yii\web\Response->send()
+#2 C:\wnmp\www\auto-report\vendor\yiisoft\yii2\base\ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\HeadersAlreadySentException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\HeadersAlreadySentException))
+#4 {main}
+Previous exception:
+yii\web\HeadersAlreadySentException: Headers already sent in C:\wnmp\www\auto-report\api\controllers\ReportController.php on line 153. in C:\wnmp\www\auto-report\vendor\yiisoft\yii2\web\Response.php:366
+Stack trace:
+#0 C:\wnmp\www\auto-report\vendor\yiisoft\yii2\web\Response.php(339): yii\web\Response->sendHeaders()
+#1 C:\wnmp\www\auto-report\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Response->send()
+#2 C:\wnmp\www\auto-report\api\web\index.php(21): yii\base\Application->run()
+#3 {main}
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData',
+    'APPDATA' => 'C:\\Windows\\system32\\config\\systemprofile\\AppData\\Roaming',
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files',
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files',
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files',
+    'COMPUTERNAME' => 'ONLINE-REPORT',
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe',
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData',
+    'LOCALAPPDATA' => 'C:\\Windows\\system32\\config\\systemprofile\\AppData\\Local',
+    'MYSQL_HOME' => 'C:\\wnmp\\mysql',
+    'NODE_OPTIONS' => '--max-http-header-size=81920',
+    'NUMBER_OF_PROCESSORS' => '8',
+    'OS' => 'Windows_NT',
+    'Path' => 'C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python38-32\\Scripts\\;C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python38-32\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\wnmp\\php\\;C:\\wnmp\\nginx\\;C:\\wnmp\\mysql\\bin\\;C:\\work\\tool\\Git\\cmd;C:\\Program Files\\Git\\cmd;C:\\Windows\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps',
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW',
+    'PROCESSOR_ARCHITECTURE' => 'AMD64',
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 85 Stepping 7, GenuineIntel',
+    'PROCESSOR_LEVEL' => '6',
+    'PROCESSOR_REVISION' => '5507',
+    'ProgramData' => 'C:\\ProgramData',
+    'ProgramFiles' => 'C:\\Program Files',
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)',
+    'ProgramW6432' => 'C:\\Program Files',
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules',
+    'PUBLIC' => 'C:\\Users\\Public',
+    'SystemDrive' => 'C:',
+    'SystemRoot' => 'C:\\Windows',
+    'TEMP' => 'C:\\Windows\\TEMP',
+    'TMP' => 'C:\\Windows\\TEMP',
+    'USERDOMAIN' => 'WORKGROUP',
+    'USERNAME' => 'ONLINE-REPORT$',
+    'USERPROFILE' => 'C:\\Windows\\system32\\config\\systemprofile',
+    'windir' => 'C:\\Windows',
+    'HTTP_COOKIE' => 'advanced-api=cdmuvhhcvhgi5c6n7km2k3cgd7',
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+    'HTTP_REFERER' => 'http://121.36.2.49/index/Mangent/reportdetail',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.79 Safari/537.36',
+    'HTTP_ACCEPT' => 'application/json, text/plain, */*',
+    'HTTP_CONNECTION' => 'close',
+    'HTTP_HOST' => '127.0.0.1:8090',
+    'REDIRECT_STATUS' => '200',
+    'SERVER_NAME' => '127.0.0.1',
+    'SERVER_PORT' => '8090',
+    'SERVER_ADDR' => '127.0.0.1',
+    'REMOTE_PORT' => '59535',
+    'REMOTE_ADDR' => '127.0.0.1',
+    'SERVER_SOFTWARE' => 'nginx/1.16.1',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'REQUEST_SCHEME' => 'http',
+    'SERVER_PROTOCOL' => 'HTTP/1.0',
+    'DOCUMENT_ROOT' => 'C:/wnmp/www/auto-report/api/web',
+    'DOCUMENT_URI' => '/index.php',
+    'REQUEST_URI' => '/report/reportpdfpath?id=107233',
+    'SCRIPT_NAME' => '/index.php',
+    'CONTENT_LENGTH' => '',
+    'CONTENT_TYPE' => '',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => 'id=107233',
+    'SCRIPT_FILENAME' => 'C:/wnmp/www/auto-report/api/web/index.php',
+    'FCGI_ROLE' => 'RESPONDER',
+    'PHP_SELF' => '/index.php',
+    'REQUEST_TIME_FLOAT' => 1660542013.645542,
+    'REQUEST_TIME' => 1660542013,
+]
+[15-Aug-2022 15:22:59 Asia/Chongqing] An Error occurred while handling another error:
+yii\web\HeadersAlreadySentException: Headers already sent in C:\wnmp\www\auto-report\api\controllers\ReportController.php on line 153. in C:\wnmp\www\auto-report\vendor\yiisoft\yii2\web\Response.php:366
+Stack trace:
+#0 C:\wnmp\www\auto-report\vendor\yiisoft\yii2\web\Response.php(339): yii\web\Response->sendHeaders()
+#1 C:\wnmp\www\auto-report\vendor\yiisoft\yii2\web\ErrorHandler.php(135): yii\web\Response->send()
+#2 C:\wnmp\www\auto-report\vendor\yiisoft\yii2\base\ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\HeadersAlreadySentException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\HeadersAlreadySentException))
+#4 {main}
+Previous exception:
+yii\web\HeadersAlreadySentException: Headers already sent in C:\wnmp\www\auto-report\api\controllers\ReportController.php on line 153. in C:\wnmp\www\auto-report\vendor\yiisoft\yii2\web\Response.php:366
+Stack trace:
+#0 C:\wnmp\www\auto-report\vendor\yiisoft\yii2\web\Response.php(339): yii\web\Response->sendHeaders()
+#1 C:\wnmp\www\auto-report\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Response->send()
+#2 C:\wnmp\www\auto-report\api\web\index.php(21): yii\base\Application->run()
+#3 {main}
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData',
+    'APPDATA' => 'C:\\Windows\\system32\\config\\systemprofile\\AppData\\Roaming',
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files',
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files',
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files',
+    'COMPUTERNAME' => 'ONLINE-REPORT',
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe',
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData',
+    'LOCALAPPDATA' => 'C:\\Windows\\system32\\config\\systemprofile\\AppData\\Local',
+    'MYSQL_HOME' => 'C:\\wnmp\\mysql',
+    'NODE_OPTIONS' => '--max-http-header-size=81920',
+    'NUMBER_OF_PROCESSORS' => '8',
+    'OS' => 'Windows_NT',
+    'Path' => 'C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python38-32\\Scripts\\;C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python38-32\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\wnmp\\php\\;C:\\wnmp\\nginx\\;C:\\wnmp\\mysql\\bin\\;C:\\work\\tool\\Git\\cmd;C:\\Program Files\\Git\\cmd;C:\\Windows\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps',
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW',
+    'PROCESSOR_ARCHITECTURE' => 'AMD64',
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 85 Stepping 7, GenuineIntel',
+    'PROCESSOR_LEVEL' => '6',
+    'PROCESSOR_REVISION' => '5507',
+    'ProgramData' => 'C:\\ProgramData',
+    'ProgramFiles' => 'C:\\Program Files',
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)',
+    'ProgramW6432' => 'C:\\Program Files',
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules',
+    'PUBLIC' => 'C:\\Users\\Public',
+    'SystemDrive' => 'C:',
+    'SystemRoot' => 'C:\\Windows',
+    'TEMP' => 'C:\\Windows\\TEMP',
+    'TMP' => 'C:\\Windows\\TEMP',
+    'USERDOMAIN' => 'WORKGROUP',
+    'USERNAME' => 'ONLINE-REPORT$',
+    'USERPROFILE' => 'C:\\Windows\\system32\\config\\systemprofile',
+    'windir' => 'C:\\Windows',
+    'HTTP_COOKIE' => 'advanced-api=cdmuvhhcvhgi5c6n7km2k3cgd7',
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+    'HTTP_REFERER' => 'http://121.36.2.49/index/Mangent/reportdetail',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.79 Safari/537.36',
+    'HTTP_ACCEPT' => 'application/json, text/plain, */*',
+    'HTTP_CONNECTION' => 'close',
+    'HTTP_HOST' => '127.0.0.1:8090',
+    'REDIRECT_STATUS' => '200',
+    'SERVER_NAME' => '127.0.0.1',
+    'SERVER_PORT' => '8090',
+    'SERVER_ADDR' => '127.0.0.1',
+    'REMOTE_PORT' => '64540',
+    'REMOTE_ADDR' => '127.0.0.1',
+    'SERVER_SOFTWARE' => 'nginx/1.16.1',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'REQUEST_SCHEME' => 'http',
+    'SERVER_PROTOCOL' => 'HTTP/1.0',
+    'DOCUMENT_ROOT' => 'C:/wnmp/www/auto-report/api/web',
+    'DOCUMENT_URI' => '/index.php',
+    'REQUEST_URI' => '/report/reportpdfpath?id=107230',
+    'SCRIPT_NAME' => '/index.php',
+    'CONTENT_LENGTH' => '',
+    'CONTENT_TYPE' => '',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => 'id=107230',
+    'SCRIPT_FILENAME' => 'C:/wnmp/www/auto-report/api/web/index.php',
+    'FCGI_ROLE' => 'RESPONDER',
+    'PHP_SELF' => '/index.php',
+    'REQUEST_TIME_FLOAT' => 1660548179.187968,
+    'REQUEST_TIME' => 1660548179,
+]

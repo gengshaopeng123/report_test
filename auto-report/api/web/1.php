@@ -1,0 +1,1 @@
+{"output_path": "C:/wnmp/www/auto-report/api/web/filter_output_path/ruize/20210423/3076e50f804a7ca25f371a3b1e18eeeb.xlsx", "code": "0", "message": "success", "output_download_path": "http://121.36.2.49:8090/filter_output_path/ruize/20210423/3076e50f804a7ca25f371a3b1e18eeeb.xlsx"}

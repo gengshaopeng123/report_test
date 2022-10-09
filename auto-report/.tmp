@@ -1,0 +1,17 @@
+
+7-Zip 19.00 (x64) : Copyright (c) 1999-2018 Igor Pavlov : 2019-02-21
+
+Scanning the drive for archives:
+1 file, 308205 bytes (301 KiB)
+
+Extracting archive: C:\wnmp\www\auto-report\api\controllers\upload\20200724\25bc294cea584fa93a346616a5664433.zip
+--
+Path = C:\wnmp\www\auto-report\api\controllers\upload\20200724\25bc294cea584fa93a346616a5664433.zip
+Type = zip
+Physical Size = 308205
+
+Everything is Ok
+
+Files: 4
+Size:       321762
+Compressed: 308205

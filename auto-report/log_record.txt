@@ -1,0 +1,22 @@
+2020-08-05 10:21:04,999 - root - ERROR - {'code': '1', 'message': "'Date_Acception'", 'output_download_path': 'http://121.36.2.49:8090/output_path/m1/20200805/12345679/u80c6/u6c41/u9178/u8c311596594063.docx'}
+2020-08-05 10:21:04,999 - root - ERROR - Traceback (most recent call last):
+  File "C:/work/auto_reporter/reporter/jianqi-cmd/zhipu_zhanjiang/report.py", line 145, in <module>
+    write_to_docx(string, data, mode, basepath)
+  File "C:/work/auto_reporter/reporter/jianqi-cmd/zhipu_zhanjiang/report.py", line 67, in write_to_docx
+    Date_Acception = string["Sample_Info"]["Date_Acception"]#????
+KeyError: 'Date_Acception'
+2020-08-05 10:36:29,061 - root - ERROR - {'code': '1', 'message': "'Date_Acception'", 'output_download_path': 'http://121.36.2.49:8090/output_path/m1/20200805/12345679/u80c6/u6c41/u9178/u8c311596594988.docx'}
+2020-08-05 10:36:29,061 - root - ERROR - Traceback (most recent call last):
+  File "C:/work/auto_reporter/reporter/jianqi-cmd/zhipu_zhanjiang/report.py", line 140, in <module>
+    write_to_docx(string, data, mode, basepath)
+  File "C:/work/auto_reporter/reporter/jianqi-cmd/zhipu_zhanjiang/report.py", line 64, in write_to_docx
+    Date_Acception = string["Sample_Info"]["Date_Acception"]#????
+KeyError: 'Date_Acception'
+2020-08-05 10:51:12,789 - root - ERROR - {'code': '1', 'message': "'Date_Acception'", 'output_download_path': 'http://121.36.2.49:8090/output_path/m1/20200805/12345679/u80c6/u6c41/u9178/u8c311596595872.docx'}
+2020-08-05 10:51:12,789 - root - ERROR - Traceback (most recent call last):
+  File "C:/work/auto_reporter/reporter/jianqi-cmd/zhipu_zhanjiang/report.py", line 140, in <module>
+    write_to_docx(string, data, mode, basepath)
+  File "C:/work/auto_reporter/reporter/jianqi-cmd/zhipu_zhanjiang/report.py", line 64, in write_to_docx
+    Date_Acception = string["Sample_Info"]["Date_Acception"]#????
+KeyError: 'Date_Acception'
+2020-08-05 10:58:09,536 - root - INFO - {'output_path': 'C:/wnmp/www/auto-report/api/web/output_path/m1/20200805/12345679/u80c6/u6c41/u9178/u8c311596596288.docx', 'code': '0', 'message': 'success', 'output_download_path': 'http://121.36.2.49:8090/output_path/m1/20200805/12345679/u80c6/u6c41/u9178/u8c311596596288.docx'}
